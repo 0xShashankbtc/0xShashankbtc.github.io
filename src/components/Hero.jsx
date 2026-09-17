@@ -179,17 +179,20 @@ export default function Hero({ onOpenContact, onOpenBooking }) {
               </div>
             </div>
 
-            {/* Right Image */}
-            <div className="lg:col-span-5 relative group overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-xs">
-              <img
-                src="/sj.jpg"
-                alt="Shashank Jangid in Robotics Lab"
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
+            {/* Right Image (Original Aspect Ratio & Natural Framing) */}
+            <div className="lg:col-span-5 relative group overflow-hidden rounded-3xl border border-slate-200/90 bg-slate-100 shadow-md">
+              <div className="aspect-[4/3] w-full overflow-hidden relative">
+                <img
+                  src="/sj.jpg"
+                  alt="Shashank Jangid - Original Capture"
+                  className="w-full h-full object-cover object-[50%_18%] transition-transform duration-500 group-hover:scale-[1.02]"
+                  loading="eager"
+                />
+              </div>
 
-              <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-200 text-[11px] font-mono font-bold text-slate-800 shadow-xs flex items-center gap-1.5">
+              <div className="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-slate-200 text-[11px] font-mono font-bold text-slate-800 shadow-xs flex items-center gap-1.5">
                 <Zap className="w-3.5 h-3.5 text-amber-500" />
-                <span>20+ Projects</span>
+                <span>Original Lab Capture</span>
               </div>
             </div>
 

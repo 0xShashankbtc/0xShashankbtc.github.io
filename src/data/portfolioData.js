@@ -1,14 +1,14 @@
 export const SITE_METADATA = {
   name: "Shashank Jangid",
   title: "AI Systems Scholar · Robotics & Kinematics · CUDA & Distributed Systems",
-  tagline: "Engineering autonomous robotics, high-performance CUDA GPU pipelines, multi-agent AI architectures, and distributed embedded systems.",
-  bio: "M.Tech AI Scholar at IIT Jodhpur & Electronics Engineer. Dedicated to engineering real-time autonomous robotics (ROS2 & Kinematics), high-throughput GPU computing (C++/CUDA Sobel & Canny), distributed database sharding, production LLM fine-tuning (QLoRA & LangGraph), and embedded IoT signal processing (ESP32/FFT).",
+  tagline: "Engineering autonomous robotics, high-performance CUDA GPU pipelines, custom multi-agent AI workflows, and distributed embedded systems.",
+  bio: "M.Tech AI Scholar at IIT Jodhpur & Electronics Engineer. Dedicated to engineering real-time autonomous robotics (ROS2 & Kinematics), high-throughput GPU computing (C++/CUDA Sobel & Canny), distributed database sharding, custom autonomous AI agents (LangGraph & MCP), and enterprise platforms with 360° WebGL views.",
   status: "Available for Opportunities",
   email: "Shashankjangidofficial@gmail.com",
   phone: "+91 89583 47428",
   linkedin: "https://linkedin.com/in/Shashank_Jangid",
-  github: "https://github.com/0xShashankbtc",
-  githubAlt: "https://github.com/ShashankJangid",
+  github: "https://github.com/ShashankJangid",
+  githubAlt: "https://github.com/0xShashankbtc",
   location: "IIT Jodhpur, Rajasthan, India",
   yearsExperience: "4+",
   projectsDelivered: "20+",
@@ -20,6 +20,46 @@ export const SITE_METADATA = {
 };
 
 export const PROJECTS = [
+  {
+    id: "dpsi-fullstack-360",
+    title: "DPSI Full-Stack Platform with AI, 360° View & CMS",
+    subtitle: "Enterprise full-stack institutional platform featuring an interactive 360-degree virtual tour, headless CMS, and integrated AI assistant.",
+    category: "Web3 & Enterprise",
+    industry: "Full-Stack Web · WebGL 360° · CMS",
+    scope: "Full-Stack · Three.js · Headless CMS",
+    duration: "2025",
+    image: "/ai-network.jpg",
+    featured: true,
+    challenge: "Delivering an immersive 360-degree virtual tour with low-latency panoramic streaming, an automated headless CMS for real-time editorial publishing, and an AI conversational assistant.",
+    goal: "Build a modern full-stack web ecosystem with equirectangular 360° WebGL views, dynamic CMS management, and instant AI guidance.",
+    solution: "Engineered high-performance Three.js/WebGL 360° panoramic viewer with interactive hotspot navigation, coupled with an automated headless CMS and streaming AI concierge.",
+    highlights: [
+      "Interactive 360° Equirectangular Virtual Campus Tour powered by WebGL & Three.js",
+      "Custom Headless CMS for real-time announcements, galleries, and events",
+      "Integrated AI Assistant for automated visitor inquiries and admissions support",
+      "Ultra-responsive responsive UI architecture with instant client-side routing"
+    ]
+  },
+  {
+    id: "custom-ai-agents",
+    title: "Customised Autonomous AI Agents & Multi-Agent Workflows",
+    subtitle: "Production-grade multi-agent autonomous framework with LangGraph, dynamic tool calling, persistent memory state, and Model Context Protocol (MCP) integrations.",
+    category: "AI & ML",
+    industry: "Agentic AI · Multi-Agent Systems",
+    scope: "LangGraph · MCP · Multi-Agent Teams",
+    duration: "2026",
+    image: "/ai-network.jpg",
+    featured: true,
+    challenge: "Coordinating autonomous agent teams across non-deterministic tools, persistent conversational state, and reliable self-correction without hallucinations or infinite loops.",
+    goal: "Architect modular, domain-customized autonomous AI agents capable of planning, web browsing, code execution, and task delegation.",
+    solution: "Designed hierarchical LangGraph agent graphs with Model Context Protocol (MCP) tool bindings, persistent vector memory, and reflection loops.",
+    highlights: [
+      "Hierarchical Multi-Agent Architecture with Supervisor & Specialized Worker Agents",
+      "Model Context Protocol (MCP) tool integration for dynamic runtime tool dispatch",
+      "Persistent Checkpointed Memory with short-term buffer & long-term vector retrieval",
+      "Self-healing execution loops with automated error reflection and tool retry logic"
+    ]
+  },
   {
     id: "cuda-edge-detection",
     title: "CUDA Real-Time Edge Detection Pipeline",
@@ -38,26 +78,6 @@ export const PROJECTS = [
       "4-Stage Canny edge detection pipeline on CUDA threads",
       "Non-Maximum Suppression (NMS) and hysteresis thresholding",
       "Benchmarked with OpenCV GPU and real-time webcam streams"
-    ]
-  },
-  {
-    id: "distributed-db-sharding",
-    title: "Distributed Database Sharding Engine",
-    subtitle: "Horizontal database partitioning system with consistent hash rings, virtual nodes, dynamic query router, and replication factor N across PostgreSQL nodes.",
-    category: "GPU & Systems",
-    industry: "Distributed Systems · Databases",
-    scope: "Distributed Architecture",
-    duration: "2026",
-    image: "/iot-system.jpg",
-    featured: true,
-    challenge: "Maintaining balanced data distribution and fault tolerance when dynamically adding or removing database nodes.",
-    goal: "Engineer a high-throughput sharding layer with minimal resharding overhead.",
-    solution: "Designed consistent hashing with MD5 virtual nodes, automated ShardManager failover, and connection pooling for PostgreSQL.",
-    highlights: [
-      "Consistent hash ring with configurable virtual node multiplier",
-      "Replication factor N with primary-replica automatic sync",
-      "Intelligent query router with parallel scatter-gather queries",
-      "Automated node health checks and dynamic rebalancing"
     ]
   },
   {
@@ -81,6 +101,26 @@ export const PROJECTS = [
     ]
   },
   {
+    id: "distributed-db-sharding",
+    title: "Distributed Database Sharding Engine",
+    subtitle: "Horizontal database partitioning system with consistent hash rings, virtual nodes, dynamic query router, and replication factor N across PostgreSQL nodes.",
+    category: "GPU & Systems",
+    industry: "Distributed Systems · Databases",
+    scope: "Distributed Architecture",
+    duration: "2026",
+    image: "/iot-system.jpg",
+    featured: true,
+    challenge: "Maintaining balanced data distribution and fault tolerance when dynamically adding or removing database nodes.",
+    goal: "Engineer a high-throughput sharding layer with minimal resharding overhead.",
+    solution: "Designed consistent hashing with MD5 virtual nodes, automated ShardManager failover, and connection pooling for PostgreSQL.",
+    highlights: [
+      "Consistent hash ring with configurable virtual node multiplier",
+      "Replication factor N with primary-replica automatic sync",
+      "Intelligent query router with parallel scatter-gather queries",
+      "Automated node health checks and dynamic rebalancing"
+    ]
+  },
+  {
     id: "llm-finetuning-toolkit",
     title: "QLoRA LLM Fine-Tuning & Evaluation Toolkit",
     subtitle: "Production toolkit for parameter-efficient fine-tuning (PEFT) of open-source LLMs using QLoRA 4-bit quantization, TRL SFTTrainer, and W&B tracking.",
@@ -89,7 +129,7 @@ export const PROJECTS = [
     scope: "PyTorch & HuggingFace",
     duration: "2025",
     image: "/ai-network.jpg",
-    featured: true,
+    featured: false,
     challenge: "Fine-tuning large language models on single-GPU hardware without sacrificing downstream reasoning precision.",
     goal: "Build an automated, YAML-configured fine-tuning workflow for instruction tuning and domain adaptation.",
     solution: "Configured BitsAndBytes 4-bit NF4 quantization, LoRA rank optimization, and HuggingFace TRL trainer.",
@@ -98,26 +138,6 @@ export const PROJECTS = [
       "PEFT LoRA adapter injection for attention & MLP layers",
       "Automated evaluation with BLEU, ROUGE, and perplexity metrics",
       "Weights & Biases (W&B) experiment logging and model artifact checkpointing"
-    ]
-  },
-  {
-    id: "ai-agent-framework",
-    title: "Multi-Agent Orchestration & RAG Framework",
-    subtitle: "Autonomous multi-agent framework built with LangChain, LangGraph, ChromaDB vector search, persistent conversation memory, and tool routing.",
-    category: "AI & ML",
-    industry: "Agentic AI · Multi-Agent Systems",
-    scope: "LangGraph · Vector DB",
-    duration: "2025",
-    image: "/ai-network.jpg",
-    featured: true,
-    challenge: "Orchestrating complex multi-turn workflows across specialized agents while preventing state divergence and hallucinations.",
-    goal: "Create a resilient agent architecture with dynamic tool dispatch and retrieval grounding.",
-    solution: "Designed LangGraph state graphs with ChromaDB semantic search, custom tool runners, and streaming LLM synthesis.",
-    highlights: [
-      "Stateful LangGraph agent graph with conditional routing",
-      "ChromaDB semantic retrieval with HuggingFace embeddings",
-      "Automated function calling and web research tool integration",
-      "Streaming token output with real-time UI synchronization"
     ]
   },
   {
@@ -324,40 +344,40 @@ export const PROJECTS = [
 
 export const SKILLS = [
   {
-    id: "cuda-gpu",
-    title: "GPU Computing & CUDA",
-    description: "High-performance parallel computing with C++/CUDA, 2D shared-memory tiling, Canny/Sobel filters, and TensorRT optimization.",
-    tools: ["C++", "CUDA", "Shared Memory", "OpenCV GPU", "TensorRT", "GPU Profiling"]
+    id: "languages",
+    title: "Languages",
+    description: "High-performance systems programming, GPU computing kernels, AI model training scripts, and distributed databases.",
+    tools: ["CUDA", "C++", "Python", "TypeScript", "JavaScript", "SQL (PostgreSQL)"]
   },
   {
-    id: "ai-agents-llm",
-    title: "AI Systems, LLMs & Agents",
-    description: "Fine-tuning open models with QLoRA/PEFT, orchestrating multi-agent state graphs via LangGraph, and RAG retrieval pipelines.",
-    tools: ["PyTorch", "LangChain", "LangGraph", "QLoRA / PEFT", "ChromaDB", "YOLOv8"]
+    id: "ai-ml-llm",
+    title: "AI · ML · LLMs",
+    description: "Deep learning models, parameter-efficient fine-tuning (PEFT/QLoRA), embeddings, vector search, and model tracking.",
+    tools: ["PyTorch", "TensorFlow", "Hugging Face", "Transformers", "Fine-Tuning (PEFT)", "LangChain", "LangGraph", "Vector DBs (Qdrant/ChromaDB)", "W&B"]
   },
   {
-    id: "robotics-ros",
-    title: "Advanced Robotics & Kinematics",
-    description: "Industrial & research robotics programming with forward/inverse kinematics, ROS2 control loops, CAN bus drivers, and trajectory planning.",
-    tools: ["ROS2", "Unitree Z1 SDK", "MoveIt2", "Inverse Kinematics", "CAN Bus", "Gazebo"]
+    id: "custom-agents-vision",
+    title: "Customised AI Agents · Vision",
+    description: "Autonomous multi-agent architectures, dynamic tool orchestration via Model Context Protocol (MCP), and real-time object tracking.",
+    tools: ["Custom AI Agents", "LangGraph Teams", "MCP (Model Context Protocol)", "Gemini API", "YOLOv8", "OpenCV", "ByteTrack"]
   },
   {
-    id: "distributed-systems",
-    title: "Distributed Systems & Backend",
-    description: "Architecting horizontal database sharding with consistent hashing, virtual node replication, Docker containerization, and REST APIs.",
-    tools: ["PostgreSQL", "Consistent Hashing", "Docker", "Python / FastAPI", "TypeScript", "Node.js"]
+    id: "robotics-hardware",
+    title: "Robotics · Hardware",
+    description: "Industrial robotics, kinematics planning, ROS2 control loops, CAN bus communication, microcontrollers, and multi-layer PCBs.",
+    tools: ["ROS2", "Unitree SDK (Z1/GO-2/G1)", "ESP32", "Raspberry Pi", "Arduino", "nRF24L01 (2.4GHz RF)", "MPU6050 IMU", "MQ2 Gas Sensor"]
   },
   {
-    id: "iot-dsp",
-    title: "IoT, Embedded & Digital Signal Processing",
-    description: "Microcontroller system design with real-time FFT/IIR signal sampling, ESP32/ESP8266, PCB layout, and low-latency wireless telemetry.",
-    tools: ["ESP32 / ESP8266", "FFT & IIR Filtering", "Eagle CAD", "MQTT", "nRF24L01", "MPU6050"]
+    id: "web-backend-360",
+    title: "Web · Backend · 360° View",
+    description: "Enterprise web platforms, interactive 360° panoramic WebGL tours, headless CMS, and full-stack API architectures.",
+    tools: ["Next.js", "React", "Three.js (360° View)", "Headless CMS", "Node.js", "Tailwind CSS", "Vite", "Streamlit", "PostgreSQL"]
   },
   {
-    id: "web3-enterprise",
-    title: "Web3 & Enterprise Architecture",
-    description: "Decentralized applications, Solidity smart contracts, Solana DEX bots, and modern React/Vite web application platforms.",
-    tools: ["Solidity", "Ethereum", "Web3.js", "Solana RPC", "React / Vite", "Tailwind CSS"]
+    id: "automation-infrastructure",
+    title: "Automation · Infrastructure",
+    description: "Production workflow orchestration, Model Context Protocol servers, continuous integration pipelines, and containerization.",
+    tools: ["n8n Automation", "MCP Servers", "CI/CD (GitHub Actions)", "Docker", "Vercel", "Linux OS"]
   }
 ];
 
@@ -465,19 +485,19 @@ By mapping both database nodes and record partition keys onto a continuous $2^{3
 export const FAQS = [
   {
     question: "What is Shashank's educational background and focus area?",
-    answer: "Shashank is currently an M.Tech scholar in Artificial Intelligence at IIT Jodhpur (Graduation 2026) and holds a B.Tech in Electronics Engineering. His core focus spans Autonomous Robotics (ROS2 & Kinematics), GPU High-Performance Computing (CUDA), Distributed Systems, and MLOps."
+    answer: "Shashank is currently an M.Tech scholar in Artificial Intelligence at IIT Jodhpur (Graduation 2026) and holds a B.Tech in Electronics Engineering. His core focus spans Autonomous Robotics (ROS2 & Kinematics), GPU High-Performance Computing (CUDA), Custom Autonomous AI Agents, and Distributed Systems."
+  },
+  {
+    question: "What is the DPSI Full-Stack Website with AI, 360° View & CMS?",
+    answer: "A flagship full-stack institutional platform developed by Shashank featuring interactive 360-degree virtual tour navigation built with Three.js/WebGL, an automated headless CMS for real-time publishing, and an AI conversational assistant."
+  },
+  {
+    question: "What capabilities do Shashank's Customised AI Agents provide?",
+    answer: "Custom autonomous multi-agent systems built using LangGraph and the Model Context Protocol (MCP). They feature persistent vector memory, supervisor-directed task delegation, dynamic tool execution, and automated self-healing loops."
   },
   {
     question: "What hardware and robotics platforms does Shashank specialize in?",
     answer: "Industrial and research platforms including the Unitree Z1 robotic arm, Robodog GO-2, Humanoid G1, 6-DOF robotic arms, ROS2 MoveIt2, ESP32/ESP8266 microcontrollers, CAN bus motor drivers, and multi-layer custom PCB design (Eagle CAD)."
-  },
-  {
-    question: "What AI and deep learning frameworks does Shashank use?",
-    answer: "PyTorch, CUDA C++, TensorRT, HuggingFace (PEFT, LoRA, TRL), LangChain, LangGraph, ChromaDB, OpenCV, YOLOv8, and high-throughput streaming LLM integrations with Groq."
-  },
-  {
-    question: "How does the AI Twin assistant work?",
-    answer: "The AI Twin is a specialized neural assistant powered by Groq's streaming LLM inference engine, equipped with comprehensive knowledge of all of Shashank's engineering projects, research papers, and technical stack."
   },
   {
     question: "What certifications and recognitions does Shashank hold?",
