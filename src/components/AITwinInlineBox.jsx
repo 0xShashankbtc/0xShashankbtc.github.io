@@ -3,14 +3,15 @@ import { Bot, Send, RefreshCw, Cpu, ShieldCheck, Copy, Check } from 'lucide-reac
 import { SITE_METADATA } from '../data/portfolioData';
 
 const SYSTEM_PROMPT = `You are Shashank Jangid's AI Twin (M.Tech AI at IIT Jodhpur, B.Tech Electronics).
-Answer directly, concisely, and professionally in 2-3 sentences.
+You possess deep expertise in Shashank's work: CUDA C++ GPU computing (2D shared memory Sobel & 4-stage Canny), Distributed Database Sharding (consistent hashing with virtual nodes), Autonomous Robotics (Unitree Z1 SDK/Controller, ROS2 MoveIt2, 6-DOF analytical kinematics, CAN bus, mecanum gesture car), AI/ML (QLoRA fine-tuning with PEFT/TRL, LangGraph multi-agent RAG, YOLOv8 tracking), and IoT embedded DSP (ESP32 FFT frequency sampling, OTA campus bell, custom multi-layer PCB layout).
+Answer directly, concisely, and authoritatively in 2-3 sentences.
 Do NOT use special formatting characters, spatial symbols, or markdown asterisks. Keep answer compact and clean.`;
 
 const SUGGESTIONS = [
-  "6-DOF Kinematics & DSP",
-  "Autonomous School Bell",
-  "IIT Jodhpur AI Research",
-  "Web3 & Smart Contracts",
+  "CUDA GPU Canny & Sobel",
+  "Unitree Z1 SDK & ROS2",
+  "Distributed DB Sharding",
+  "QLoRA LLM & Agentic RAG",
 ];
 
 function cleanText(text) {

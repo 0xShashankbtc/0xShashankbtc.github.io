@@ -4,6 +4,7 @@ import AITwinPlayground from '../components/AITwinPlayground';
 import ProjectGrid from '../components/ProjectGrid';
 import SkillsGrid from '../components/SkillsGrid';
 import EducationTimeline from '../components/EducationTimeline';
+import ArticlesSection from '../components/ArticlesSection';
 import FAQSection from '../components/FAQSection';
 import ContactCTA from '../components/ContactCTA';
 import AITwinChatWidget from '../components/AITwinChatWidget';
@@ -16,6 +17,7 @@ export default function HomePage({ onOpenContact, onOpenBooking }) {
       <ProjectGrid />
       <SkillsGrid />
       <EducationTimeline />
+      <ArticlesSection />
       <FAQSection />
       <ContactCTA onOpenContact={onOpenContact} onOpenBooking={onOpenBooking} />
       <AITwinChatWidget />

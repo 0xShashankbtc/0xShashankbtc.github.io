@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
 import { PROJECTS } from '../data/portfolioData';
 
-const CATEGORIES = ['All', 'Robotics', 'IoT', 'AI', 'Hardware', 'Web'];
+const CATEGORIES = ['All', 'AI & ML', 'Robotics', 'GPU & Systems', 'IoT & DSP', 'Web3 & Enterprise'];
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState('All');

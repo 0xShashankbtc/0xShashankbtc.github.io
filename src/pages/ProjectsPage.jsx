@@ -6,7 +6,7 @@ import ContactCTA from '../components/ContactCTA';
 import FAQSection from '../components/FAQSection';
 import { FolderGit2 } from 'lucide-react';
 
-const CATEGORIES = ['All', 'Robotics', 'IoT', 'AI', 'Hardware', 'Web'];
+const CATEGORIES = ['All', 'AI & ML', 'Robotics', 'GPU & Systems', 'IoT & DSP', 'Web3 & Enterprise'];
 
 export default function ProjectsPage({ onOpenContact, onOpenBooking }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
