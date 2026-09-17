@@ -20,11 +20,12 @@ export const SITE_METADATA = {
 };
 
 export const PROJECTS = [
+  // --- NEW HIGHLIGHTED PROJECTS ---
   {
     id: "dpsi-fullstack-360",
     title: "DPSI Full-Stack Platform with AI, 360° View & CMS",
     subtitle: "Enterprise full-stack institutional platform featuring an interactive 360-degree virtual tour, headless CMS, and integrated AI assistant.",
-    category: "Web3 & Enterprise",
+    category: "Web",
     industry: "Full-Stack Web · WebGL 360° · CMS",
     scope: "Full-Stack · Three.js · Headless CMS",
     duration: "2025",
@@ -44,7 +45,7 @@ export const PROJECTS = [
     id: "custom-ai-agents",
     title: "Customised Autonomous AI Agents & Multi-Agent Workflows",
     subtitle: "Production-grade multi-agent autonomous framework with LangGraph, dynamic tool calling, persistent memory state, and Model Context Protocol (MCP) integrations.",
-    category: "AI & ML",
+    category: "AI",
     industry: "Agentic AI · Multi-Agent Systems",
     scope: "LangGraph · MCP · Multi-Agent Teams",
     duration: "2026",
@@ -124,7 +125,7 @@ export const PROJECTS = [
     id: "llm-finetuning-toolkit",
     title: "QLoRA LLM Fine-Tuning & Evaluation Toolkit",
     subtitle: "Production toolkit for parameter-efficient fine-tuning (PEFT) of open-source LLMs using QLoRA 4-bit quantization, TRL SFTTrainer, and W&B tracking.",
-    category: "AI & ML",
+    category: "AI",
     industry: "GenAI · LLM Engineering",
     scope: "PyTorch & HuggingFace",
     duration: "2025",
@@ -144,7 +145,7 @@ export const PROJECTS = [
     id: "computer-vision-pipeline",
     title: "Real-Time YOLOv8 & ByteTrack Vision Pipeline",
     subtitle: "High-throughput object detection and multi-camera object tracking engine using YOLOv8, OpenCV, and ByteTrack algorithm.",
-    category: "AI & ML",
+    category: "AI",
     industry: "Computer Vision · Edge AI",
     scope: "YOLOv8 · OpenCV · Tracking",
     duration: "2025",
@@ -161,90 +162,10 @@ export const PROJECTS = [
     ]
   },
   {
-    id: "6dof-robotic-arm",
-    title: "6-DOF Precision Robotic Arm",
-    subtitle: "6-degree-of-freedom robotic arm featuring analytical inverse kinematics solver, custom servo trajectory planning, and real-time IIR signal filtering.",
-    category: "Robotics",
-    industry: "Advanced Robotics",
-    scope: "Kinematics & DSP",
-    duration: "2025",
-    image: "/robotic-arm.jpg",
-    featured: false,
-    challenge: "Achieving smooth trajectory planning and vibration-free motion execution across 6 mechanical joints.",
-    goal: "Engineer an inverse kinematics solver with real-time digital filtering to control joint angles precisely.",
-    solution: "Designed custom C++ kinematics algorithms and applied Infinite Impulse Response (IIR) filtering to eliminate servo jitter.",
-    highlights: [
-      "Analytical & numerical inverse kinematics solver",
-      "Real-time IIR digital signal filtering for smooth movement",
-      "Trajectory velocity and acceleration profiling",
-      "ROS integration and hardware-in-the-loop testing"
-    ]
-  },
-  {
-    id: "gesture-controlled-car",
-    title: "Glove Gesture-Controlled Mecanum Robotic Car",
-    subtitle: "Omnidirectional mecanum robot vehicle wirelessly steered via MPU6050 6-axis IMU hand gestures over 2.4GHz nRF24L01 RF.",
-    category: "IoT & DSP",
-    industry: "Robotics · Wireless Hardware",
-    scope: "ESP32 · IMU · RF Transceiver",
-    duration: "2024",
-    image: "/iot-system.jpg",
-    featured: false,
-    challenge: "Mapping subtle pitch and roll hand orientation changes to 4-wheel independent PWM signals without signal latency.",
-    goal: "Construct a wearable sensing glove that directly controls omnidirectional robot maneuvers.",
-    solution: "Integrated MPU-6050 complementary filter on ESP32 transmitting packetized control frames over nRF24L01.",
-    highlights: [
-      "MPU-6050 complementary sensor fusion (pitch & roll angles)",
-      "nRF24L01 2.4GHz RF communication with sub-10ms latency",
-      "Independent 4-wheel mecanum vector speed calculation",
-      "Ergonomic 3D-printed wearable glove mount"
-    ]
-  },
-  {
-    id: "autonomous-school-bell",
-    title: "Autonomous School Bell & Campus IoT System",
-    subtitle: "ESP32-powered automated bell with web control portal, NTP clock synchronization, wireless OTA firmware updates, and convolution tone filtering.",
-    category: "IoT & DSP",
-    industry: "IoT · Embedded Systems",
-    scope: "Hardware & Web Portal",
-    duration: "2026",
-    image: "/iot-system.jpg",
-    featured: false,
-    challenge: "Manual bell operations lacked remote scheduling, accuracy, and wireless configuration capabilities.",
-    goal: "Engineer an autonomous bell system with web dashboard scheduling and OTA firmware updates.",
-    solution: "Designed an ESP32 microcontroller system with NTP time sync, embedded web server, and convolution signal detection.",
-    highlights: [
-      "Real-time NTP clock sync with custom schedule matrix",
-      "Over-The-Air (OTA) wireless firmware updates",
-      "Embedded web server dashboard interface",
-      "Convolution-based audio tone signal processing"
-    ]
-  },
-  {
-    id: "noise-monitoring",
-    title: "Student Noise Monitoring System",
-    subtitle: "Real-time acoustic analyzer using Fast Fourier Transform (FFT) frequency sampling and threshold alerting to maintain room discipline.",
-    category: "IoT & DSP",
-    industry: "Signal Processing · IoT",
-    scope: "DSP & Microcontroller",
-    duration: "2025",
-    image: "/iot-system.jpg",
-    featured: false,
-    challenge: "Detecting sound level spikes while filtering background environmental hums.",
-    goal: "Perform real-time FFT spectrum analysis on audio streams.",
-    solution: "Deployed an ESP32 mic array using FFT algorithms to compute real-time decibel metrics.",
-    highlights: [
-      "Real-time Fast Fourier Transform (FFT) signal processing",
-      "Decibel (dBA) threshold log alerts",
-      "Visual RGB traffic-light status indicator",
-      "WiFi cloud dashboard logging"
-    ]
-  },
-  {
     id: "cardgen-id-platform",
     title: "CardGen Enterprise ID & Credential Platform",
     subtitle: "Enterprise identity and credential issuance platform featuring custom HTML5 Canvas templates, dynamic QR generation, and batch export.",
-    category: "Web3 & Enterprise",
+    category: "Web",
     industry: "Enterprise SaaS · Identity",
     scope: "TypeScript · Node.js · Canvas",
     duration: "2025",
@@ -264,7 +185,7 @@ export const PROJECTS = [
     id: "crypto-trading-bot",
     title: "Solana DEX Arbitrage & Auto-Trading Bot",
     subtitle: "Low-latency cryptocurrency trading bot with real-time WebSocket orderbook tracking, DEX arbitrage route detection, and automated execution.",
-    category: "Web3 & Enterprise",
+    category: "Web",
     industry: "FinTech · Web3 · Trading",
     scope: "Solana · WebSockets · Rust/TS",
     duration: "2025",
@@ -284,7 +205,7 @@ export const PROJECTS = [
     id: "orange-future-tech",
     title: "Orange Future Tech Enterprise Platform",
     subtitle: "Corporate engineering platform for industrial electronics, robotics automation equipment, and STEM robotics education.",
-    category: "Web3 & Enterprise",
+    category: "Web",
     industry: "Enterprise Web · Robotics Tech",
     scope: "Full-Stack Web Architecture",
     duration: "2025",
@@ -298,6 +219,168 @@ export const PROJECTS = [
       "Interactive robotics curriculum catalog",
       "Integrated booking and inquiry pipeline",
       "SEO-optimized responsive architecture"
+    ]
+  },
+
+  // --- PREVIOUS ALL ORIGINAL PROJECTS (PRESERVED 100%) ---
+  {
+    id: "autonomous-school-bell",
+    title: "Autonomous School Bell System",
+    subtitle: "ESP32-powered automated bell with web control portal, NTP clock synchronization, wireless OTA firmware updates, and convolution tone filtering.",
+    category: "IoT",
+    industry: "IoT · Embedded Systems",
+    scope: "Hardware & Web Portal",
+    duration: "2026",
+    image: "/iot-system.jpg",
+    featured: true,
+    challenge: "Manual bell operations lacked remote scheduling, accuracy, and wireless configuration capabilities.",
+    goal: "Engineer an autonomous bell system with web dashboard scheduling and OTA firmware updates.",
+    solution: "Designed an ESP32 microcontroller system with NTP time sync, embedded web server, and convolution signal detection.",
+    highlights: [
+      "Real-time NTP clock sync with custom schedule matrix",
+      "Over-The-Air (OTA) wireless firmware updates",
+      "Embedded web server dashboard interface",
+      "Convolution-based audio tone signal processing"
+    ]
+  },
+  {
+    id: "6dof-robotic-arm",
+    title: "6-DOF Precision Robotic Arm",
+    subtitle: "6-degree-of-freedom robotic arm featuring analytical inverse kinematics solver, custom servo trajectory planning, and real-time IIR signal filtering.",
+    category: "Robotics",
+    industry: "Advanced Robotics",
+    scope: "Kinematics & DSP",
+    duration: "2025",
+    image: "/robotic-arm.jpg",
+    featured: true,
+    challenge: "Achieving smooth trajectory planning and vibration-free motion execution across 6 mechanical joints.",
+    goal: "Engineer an inverse kinematics solver with real-time digital filtering to control joint angles precisely.",
+    solution: "Designed custom C++ kinematics algorithms and applied Infinite Impulse Response (IIR) filtering to eliminate servo jitter.",
+    highlights: [
+      "Analytical & numerical inverse kinematics solver",
+      "Real-time IIR digital signal filtering for smooth movement",
+      "Trajectory velocity and acceleration profiling",
+      "ROS integration and hardware-in-the-loop testing"
+    ]
+  },
+  {
+    id: "noise-monitoring",
+    title: "Student Noise Monitoring System",
+    subtitle: "Real-time acoustic analyzer using Fast Fourier Transform (FFT) frequency sampling and threshold alerting to maintain room discipline.",
+    category: "IoT",
+    industry: "Signal Processing · IoT",
+    scope: "DSP & Microcontroller",
+    duration: "2025",
+    image: "/iot-system.jpg",
+    featured: false,
+    challenge: "Detecting sound level spikes while filtering background environmental hums.",
+    goal: "Perform real-time FFT spectrum analysis on audio streams.",
+    solution: "Deployed an ESP32 mic array using FFT algorithms to compute real-time decibel metrics.",
+    highlights: [
+      "Real-time Fast Fourier Transform (FFT) signal processing",
+      "Decibel (dBA) threshold log alerts",
+      "Visual RGB traffic-light status indicator",
+      "WiFi cloud dashboard logging"
+    ]
+  },
+  {
+    id: "blindman-aid",
+    title: "Blindman Assistive Wearable Tool",
+    subtitle: "Wearable assistive device using ultrasonic ranging, haptic vibration feedback, and onboard ML to guide visually impaired users safely.",
+    category: "AI",
+    industry: "Assistive Technology",
+    scope: "AI & Wearables",
+    duration: "2025",
+    image: "/ai-network.jpg",
+    featured: false,
+    challenge: "Providing spatial guidance without obscuring natural hearing.",
+    goal: "Build a low-latency wearable spatial replacement tool with haptic feedback.",
+    solution: "Integrated ultrasonic sensor arrays with micro-haptic vibration motors and tinyML proximity classification.",
+    highlights: [
+      "Multi-directional ultrasonic echo distance ranging",
+      "Haptic vibration frequency modulation",
+      "Ergonomic wearable hardware casing",
+      "Rechargeable low-power battery unit"
+    ]
+  },
+  {
+    id: "plant-ambassador",
+    title: "Plant Ambassador Care Robot",
+    subtitle: "Autonomous mobile plant-care robot with soil moisture convolution analysis, automated watering pump, and remote tracking dashboard.",
+    category: "Robotics",
+    industry: "AgriTech · Robotics",
+    scope: "Robotics & IoT",
+    duration: "2025",
+    image: "/robotic-arm.jpg",
+    featured: false,
+    challenge: "Automating plant care with mobile robotic mobility and soil health diagnostics.",
+    goal: "Construct a mobile robot capable of monitoring and watering plants autonomously.",
+    solution: "Combined mobile robot chassis with capacitive soil sensors and automated pump actuators.",
+    highlights: [
+      "Autonomous mobile navigation chassis",
+      "Capacitive soil moisture convolution analysis",
+      "Automated peristaltic watering mechanism",
+      "IoT telemetry analytics app"
+    ]
+  },
+  {
+    id: "deep-well-scout",
+    title: "Deep Well Scout Submersible Probe",
+    subtitle: "Submersible inspection robot with live video transmission, custom IP68 waterproof PCB, and real-time aquatic sensor telemetry.",
+    category: "Robotics",
+    industry: "Submersible Robotics",
+    scope: "PCB & Mechatronics",
+    duration: "2024",
+    image: "/robotic-arm.jpg",
+    featured: false,
+    challenge: "Designing waterproof pressure-resistant electronics for underwater exploration.",
+    goal: "Build a submersible probe with HD video transmission and diagnostics.",
+    solution: "Designed a multi-layer sealed PCB housed in IP68 waterproof casing.",
+    highlights: [
+      "IP68 waterproof sealed enclosure rating",
+      "Live HD camera video streaming over tethered link",
+      "Water pressure and depth telemetry",
+      "Custom waterproof PCB circuit design"
+    ]
+  },
+  {
+    id: "glove-gesture-car",
+    title: "Glove Gesture Controlled Robotic Car",
+    subtitle: "Wireless robotic vehicle controlled by hand gestures via MPU-6050 gyroscope glove and 2.4GHz RF communication.",
+    category: "IoT",
+    industry: "Wireless Systems",
+    scope: "Sensors & RF",
+    duration: "2024",
+    image: "/iot-system.jpg",
+    featured: false,
+    challenge: "Translating hand orientation angles into low-latency wireless vehicle control signals.",
+    goal: "Build a wearable motion-sensing glove paired with a responsive 4-wheel robot vehicle.",
+    solution: "Used MPU-6050 IMU accelerometer/gyroscope with NRF24L01 2.4GHz RF transceivers.",
+    highlights: [
+      "MPU-6050 6-axis IMU pitch/roll calculation",
+      "NRF24L01 2.4GHz RF wireless communication",
+      "Differential drive DC motor control",
+      "Ultra-low latency motion mapping"
+    ]
+  },
+  {
+    id: "smart-waste-segregation",
+    title: "Smart Waste Segregation AI Bin",
+    subtitle: "AI-powered waste classifier using convolutional neural networks (CNNs) and high-torque servo flap actuation to sort recyclables.",
+    category: "AI",
+    industry: "AI & Computer Vision",
+    scope: "CV & Servo Actuation",
+    duration: "2024",
+    image: "/ai-network.jpg",
+    featured: false,
+    challenge: "Classifying trash under variable lighting conditions.",
+    goal: "Build an automated bin sorting waste into recyclable, organic, and non-recyclable bins.",
+    solution: "Trained CNN computer vision model deployed to an edge device with servo flap actuation.",
+    highlights: [
+      "Convolutional Neural Network (CNN) image classification",
+      "Real-time edge device inference execution",
+      "High-torque servo flap sorting actuation",
+      "Automatic capacity level sensing"
     ]
   },
   {
@@ -321,23 +404,43 @@ export const PROJECTS = [
     ]
   },
   {
-    id: "deep-well-scout",
-    title: "Deep Well Scout Submersible Probe",
-    subtitle: "Submersible inspection robot with live video transmission, custom IP68 waterproof PCB, and real-time aquatic sensor telemetry.",
-    category: "Robotics",
-    industry: "Submersible Robotics",
-    scope: "PCB & Mechatronics",
-    duration: "2024",
-    image: "/robotic-arm.jpg",
+    id: "smart-home-automation",
+    title: "ESP8266 Smart Home Automation",
+    subtitle: "IoT home automation using ESP-8266 and opto-isolated relay boards — appliances and lighting controlled via web application.",
+    category: "IoT",
+    industry: "Home Automation",
+    scope: "IoT Relays & Web App",
+    duration: "2023",
+    image: "/iot-system.jpg",
     featured: false,
-    challenge: "Designing waterproof pressure-resistant electronics for underwater exploration.",
-    goal: "Build a submersible probe with HD video transmission and diagnostics.",
-    solution: "Designed a multi-layer sealed PCB housed in IP68 waterproof casing.",
+    challenge: "Interfacing high-voltage AC home appliances with low-voltage microcontrollers safely.",
+    goal: "Build a reliable remote control web dashboard for home appliances.",
+    solution: "Opto-isolated relay boards connected to ESP-8266 with MQTT web server control.",
     highlights: [
-      "IP68 waterproof sealed enclosure rating",
-      "Live HD camera video streaming over tethered link",
-      "Water pressure and depth telemetry",
-      "Custom waterproof PCB circuit design"
+      "Opto-isolated 8-channel relay switching",
+      "MQTT protocol real-time web control",
+      "Manual switch state synchronization",
+      "ESP-8266 local web server fallback"
+    ]
+  },
+  {
+    id: "commercial-web-apps",
+    title: "Commercial Touch Kiosk & Web Portals",
+    subtitle: "Suite of responsive commercial web applications including DPSI Know About INDIA Kiosk, Roots of Purity, Yatrabaazar & PureDrops.",
+    category: "Web",
+    industry: "Full-Stack Web Apps",
+    scope: "React & RESTful APIs",
+    duration: "2024",
+    image: "/ai-network.jpg",
+    featured: false,
+    challenge: "Designing responsive, high-performance web platforms for touch kiosks and e-commerce.",
+    goal: "Build clean, interactive web experiences integrated with RESTful APIs.",
+    solution: "Developed custom web platforms using HTML5, CSS3, JavaScript, React, and REST APIs.",
+    highlights: [
+      "Touchscreen interactive kiosk user interface",
+      "E-commerce product catalog & checkout",
+      "RESTful API integration & state management",
+      "Ultra-responsive mobile and desktop layouts"
     ]
   }
 ];
